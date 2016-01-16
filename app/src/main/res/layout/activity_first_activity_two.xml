@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.philipfweiss.first_activity_two.first_activity_two">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/fbutton"
+        android:background="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ebutton"
+        android:layout_alignStart="@+id/ebutton"
+        android:onClick="fOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:id="@+id/gbutton"
+        android:layout_below="@+id/fbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:background="#ffffff"
+        android:onClick="gOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:id="@+id/abutton"
+        android:clickable="true"
+        android:background="#ffffff"
+        android:layout_above="@+id/bbutton"
+        android:layout_alignLeft="@+id/gbutton"
+        android:layout_alignStart="@+id/gbutton"
+        android:layout_marginBottom="4dp"
+        android:onClick="aOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:id="@+id/bbutton"
+        android:clickable="true"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/abutton"
+        android:layout_alignStart="@+id/abutton"
+        android:onClick="bOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:id="@+id/ebutton"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="#ffffff"
+        android:layout_above="@+id/fbutton"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="eOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/dbutton"
+        android:clickable="true"
+        android:background="#ffffff"
+        android:layout_below="@+id/cbutton"
+        android:layout_alignLeft="@+id/ebutton"
+        android:layout_alignStart="@+id/ebutton"
+        android:onClick="dOnClick"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/cbutton"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/dbutton"
+        android:layout_alignStart="@+id/dbutton"
+        android:layout_marginBottom="4dp"
+        android:onClick="cOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B♭"
+        android:id="@+id/bflatbutton"
+        android:clickable="true"
+        android:layout_alignTop="@+id/bbutton"
+        android:layout_toRightOf="@+id/ebutton"
+        android:layout_toEndOf="@+id/ebutton"
+        android:onClick="bFlatOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C#"
+        android:id="@+id/csharpbutton"
+        android:clickable="true"
+        android:layout_alignTop="@+id/cbutton"
+        android:layout_toRightOf="@+id/dbutton"
+        android:layout_toEndOf="@+id/dbutton"
+        android:onClick="cSharpOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E♭"
+        android:id="@+id/dsharpbutton"
+        android:clickable="true"
+        android:layout_alignTop="@+id/ebutton"
+        android:layout_toRightOf="@+id/ebutton"
+        android:layout_toEndOf="@+id/ebutton"
+        android:onClick="dSharpOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F#"
+        android:id="@+id/fflatbutton"
+        android:clickable="true"
+        android:layout_above="@+id/gbutton"
+        android:layout_toRightOf="@+id/fbutton"
+        android:layout_toEndOf="@+id/fbutton"
+        android:onClick="fFlatOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G#"
+        android:id="@+id/gsharpbutton"
+        android:clickable="true"
+        android:layout_alignTop="@+id/gbutton"
+        android:layout_toRightOf="@+id/fbutton"
+        android:layout_toEndOf="@+id/fbutton"
+        android:onClick="gSharpOnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Welcome to Philip&apos;s Piano Adventures"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/dbutton"
+        android:layout_toLeftOf="@+id/ebutton"
+        android:layout_toStartOf="@+id/ebutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Click a Button to Hear my Voice!"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/ebutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/fbutton"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+</RelativeLayout>
