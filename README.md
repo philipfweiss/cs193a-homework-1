@@ -4,4 +4,4 @@
 
 This app is a piano where each of the keys sings a note in my voice!
 
-[Imgur](http://i.imgur.com/FIXw4eP.png)
+![Imgur](http://i.imgur.com/FIXw4eP.png)
